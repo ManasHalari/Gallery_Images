@@ -24,7 +24,7 @@ function Image_List() {
 useEffect(()=>downloadImages,[])
   return(
  <div className="image-list-wrapper">
-    {(isLoading)?"Loading...":imageList.map((p,i)=><Image key={i} id={i} image={p.url}/>)}
+    {(isLoading)?"Loading...":imageList.map((p,i)=><Image key={i} id={i+1} image={p.url}/>)}
   
  </div>
 )
