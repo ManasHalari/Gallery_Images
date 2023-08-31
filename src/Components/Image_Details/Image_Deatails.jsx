@@ -13,14 +13,13 @@ function Image_Deatails(){
         console.log(photos);
         setImage(photos)
                }
-    useEffect(()=>{
-      downloadImage()
-    },)
+ 
+    useEffect(()=>downloadImage(),[])
   return (
     <div className="image-details-wrapper">
         
         <img src={image.url} alt="Image" className="image-details-image"/>
-        <h3 className="image-details-header">{image.title}</h3>
+        <h2 className="image-details-header">{image.title}</h2>
         <p className="image-details-p">Description:{image.description}</p>
     </div>
   )

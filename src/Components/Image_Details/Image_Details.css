@@ -4,3 +4,11 @@
     justify-content: center;
     align-items: center;
 }
+.image-details-image{
+    width: 30%;
+    height: 30%;
+}
+.image-details-p{
+    font-size: large;
+    font-weight: 300;
+}
